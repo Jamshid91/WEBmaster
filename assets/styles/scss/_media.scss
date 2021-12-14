@@ -1,0 +1,327 @@
+// LARGE 
+@media screen and(min-width: 1355px) {
+    
+}
+
+// DESCTOP
+@media screen and(max-width: 1350px) {
+    .header {
+        .container {
+            padding: 0 50px;
+        }
+    }
+    
+}
+
+// TABLET
+@media screen and(max-width: 1024px) {
+    .home {
+        margin-top: 25px;
+        .container {
+            height: auto;
+        }
+        &-item {
+            flex-direction: column;
+        }
+    
+        &-title {
+            width: 60%;
+            position: relative;
+            text-align: center;
+            left: 0!important;
+            top: 0 !important;
+            transform: translateY(0) !important;
+            &__text {
+                font-size: 50px;
+                margin-bottom: 10px;
+            }
+        }
+    
+        &-img {
+            position: relative;
+            bottom: 0 !important;
+            right: 0 !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 25px;   
+            &__photo {
+                width: 80%;
+            }
+        }
+    }
+    // End home
+    .aboutMe {
+        width: 100%;
+        height: auto;
+        margin: 100px 0;
+        &-item {
+            width: 300px;
+            height: 300px;
+        }
+    
+        &-list {
+            height: 200px;
+            .left-info {
+                padding: 0 10px;
+    
+                &__title {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+            }
+            .right-info {
+                padding-right: 30px;
+    
+                &__text {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: var(--white);
+                }
+            }
+        }
+    }
+    // End about me
+}
+
+@media screen and(max-width: 768px) {
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+
+        &-nav {
+            padding: 25px 0 5px 0;
+        }
+            &-logo {
+                display: none;
+            }
+            &-btn {
+                display: none;
+            }
+    }
+    
+.aboutMe {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    width: 100%;
+    padding-top: 50px;
+    &-item {
+        top: 0;
+        width: 250px;
+        height: 250px;
+    }
+
+    &-list {
+        height: 150px;
+        .left-info {
+            width: 47.5%;
+            text-align: center;
+            align-items: flex-end;
+            padding-bottom: 10px;
+
+            &__title {
+                font-size: 35px;
+                line-height: 35px;
+            }
+        }
+        .right-info {
+            width: 47.5%;
+            padding-left: 20px;
+            letter-spacing: 1px;
+            text-align: center;
+            align-items: flex-end;
+            padding-bottom: 10px;
+        }
+    }
+}
+// End about me
+
+    .technology {
+        &-item {
+            width: 100%;
+        }
+    }
+    // End technology
+
+    .portfolio {
+        margin: 50px 0;
+        &-item {
+            max-height: 375px;
+        }
+    
+        &-list {
+            width: 100%;
+            height: 350px;
+        }
+    
+    }
+    // End portfolio
+
+    .contact {
+    
+        .title__text {
+            font-size: 30px;
+        }
+
+        &-form {
+            form {
+                width: 85%;
+                height: 420px;
+                padding: 40px;
+    
+                .form__box {
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                }
+                
+                .circle-sub,
+                .circle-sup{
+                    width: 40px;
+                    height: 20px;
+    
+                    &::after,
+                    &::before {
+                        width: 40px;
+                        height: 20px;
+                        top: -20px;
+                        left: 5px;
+                    }
+                    &::before {
+                        top: 20px;
+                        left: -10px;
+                    }
+                }
+                .circle-sup{
+                    top: 60px !important;
+                    right: -20px !important;
+                }
+                .circle-sub{
+                    bottom: 60px !important;
+                    left: -20px !important;
+                }
+                .circle {
+                    left: -55px;
+                }
+    
+                .form__btn {
+                    width: 100%;
+                    height: 50px;
+                    border-radius: 20px;
+                    margin-top: 20px;
+                    cursor: pointer;
+                    font-size: 18px;
+                    background-color: var(--basic-text);
+                    color: var(--white);
+                    transition: .3s;
+    
+                    &:hover {
+                        background-color: var(--basic);
+                    }
+                }
+            }
+        }
+    }
+    // End contact
+}
+
+// MOBILE
+@media screen and(max-width: 576px) {
+    .container {
+        padding: 0 20px;
+    }
+    .home {
+        margin-top: 25px;
+        .container {
+            height: auto;
+        }
+    
+        &-title {
+            width: 100%;
+            &__text {
+                font-size: 38px;
+            }
+        }
+    }
+    // End home
+
+    .cooperate {
+        &-item {
+            width: 100%;
+        }
+    }
+    // End
+    .aboutMe {
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        padding-bottom: 40px;
+    
+        &-list {
+            margin-top: 80px;
+            height: auto;
+            flex-direction: column;
+            .left-info {
+                width: 100%;
+            }
+            .right-info {
+                width: 100%;
+                padding-left: 0px;
+            }
+        }
+    }
+    // End about me
+
+    .technology {
+        padding: 50px 0;
+    
+        &-item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 0 auto;
+        }
+    
+        &-list {
+            width: 45%;
+            margin: 25px 0 0 0;
+            box-shadow: 0px 0px 15px -2px var(--basic);
+    
+            &__img {
+                width: 50px;
+            }
+    
+            &__info {
+                bottom: 5px;
+            }
+        }
+    }
+    // End technology
+
+    .portfolio {
+        .title__text {
+            margin-bottom: 0;
+        }
+        margin: 50px 0;
+        &-item {
+            max-height: 375px;
+            padding: 0;
+        }
+    
+        &-list {
+            width: 100%;
+            height: 170px;
+            margin-bottom: 20px;
+        }
+    
+    }
+    // End portfolio
+}
+
+@media screen and(max-width: 420px) {
+    
+}
