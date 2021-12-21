@@ -565,6 +565,7 @@ button {
         text-transform: uppercase;
         cursor: pointer;
         transition: .3s;
+        margin-top: 20px;
 
         &:hover {
             background-color: var(--basic-text);
