@@ -101,6 +101,31 @@ allPortfolioBtn.addEventListener('click', () => {
         allPortfolioBtn.textContent = 'Все проекты'
         return checkNum = 0;
     }
-})
+});
+
+// Start carousel
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:20,
+    nav:true,
+    dots:false,
+    touchDrag: true,
+    mouseDrag:true,
+    responsive:{
+        0:{
+            dots:true,
+            nav:false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            items:1
+        },
+        // 600:{
+        // },
+        1000:{
+            items:2
+        }
+    }
+    })
 
 

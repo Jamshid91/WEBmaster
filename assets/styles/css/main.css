@@ -1048,6 +1048,53 @@ button {
   margin: 50px 0;
 }
 
+.portfolio .owl-nav button {
+  width: 50px !important;
+  height: 50px !important;
+  background-color: var(--basic) !important;
+  -webkit-border-radius: 50% !important;
+          border-radius: 50% !important;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 60px !important;
+  color: #000 !important;
+  outline: none !important;
+}
+
+.portfolio .owl-nav button span {
+  position: absolute;
+  top: -5px;
+  display: block;
+  width: 50px !important;
+  height: 50px !important;
+  z-index: 99;
+  color: var(--white);
+  font-weight: 300;
+}
+
+.portfolio .owl-nav button:hover {
+  background-color: var(--basic-text) !important;
+}
+
+.portfolio .owl-prev {
+  left: 0px;
+}
+
+.portfolio .owl-next {
+  right: 0px;
+}
+
+.portfolio .owl-carousel button.owl-dot span {
+  background-color: var(--basic) !important;
+}
+
+.portfolio .owl-carousel button.active span {
+  background-color: tomato !important;
+}
+
 .portfolio-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1061,24 +1108,11 @@ button {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   position: relative;
-  padding: 0 50px;
-  max-height: 375px;
-  overflow-y: hidden;
-  -webkit-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease;
-  margin-top: 50px;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
+  padding: 0 25px;
 }
 
 .portfolio-item::-webkit-scrollbar {
-  width: 5px;
-}
-
-.portfolio-item::-webkit-scrollbar-thumb {
-  background-color: var(--basic);
+  display: none;
 }
 
 .portfolio .openAllPortfolio {
@@ -1087,7 +1121,6 @@ button {
 }
 
 .portfolio-list {
-  width: 47.5%;
   height: 300px;
   position: relative;
   -webkit-border-radius: 15px;
@@ -1096,7 +1129,7 @@ button {
   -webkit-box-shadow: 0px 5px 5px 0px var(--basic);
           box-shadow: 0px 5px 5px 0px var(--basic);
   z-index: 2;
-  margin-bottom: 80px;
+  margin: 20px 0;
 }
 
 .portfolio-list .portfolio__img,
@@ -1166,6 +1199,7 @@ button {
   -o-transition: .3s;
   transition: .3s;
   margin-top: 20px;
+  display: none;
 }
 
 .portfolio .allProjects-btn:hover {
@@ -1804,8 +1838,11 @@ button {
   .portfolio {
     margin: 50px 0;
   }
+  .portfolio .container {
+    padding: 0 10px;
+  }
   .portfolio .title__text {
-    margin-bottom: 0;
+    margin-bottom: 50px;
   }
   .portfolio-item {
     max-height: 375px;
@@ -1813,7 +1850,9 @@ button {
   }
   .portfolio-list {
     width: 100%;
-    height: 170px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
     margin-bottom: 20px;
   }
 }
