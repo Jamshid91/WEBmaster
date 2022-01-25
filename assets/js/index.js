@@ -31,11 +31,13 @@ window.addEventListener('scroll', () => {
     const cooperate = document.querySelector('.cooperate span');
     const technology = document.querySelector('.technology span');
     const portfolio = document.querySelector('.portfolio span');
+    const mobilePortfolio = document.querySelector('.mobile-portfolio span');
     const contact = document.querySelector('.contact span');
 
     const positioncooperate = cooperate.getBoundingClientRect().top;
     const positiontechnology = technology.getBoundingClientRect().top;
     const positionportfolio = portfolio.getBoundingClientRect().top;
+    const positionMobportfolio = mobilePortfolio.getBoundingClientRect().top;
     const positionContact = contact.getBoundingClientRect().top;
 
     const screenPosition = window.innerHeight;
@@ -58,6 +60,12 @@ window.addEventListener('scroll', () => {
       } else {
         portfolio.classList.remove('animTitleText')
       }
+
+      if(screenPosition > positionMobportfolio) {
+        mobilePortfolio.classList.add('animTitleText')
+        } else {
+            mobilePortfolio.classList.remove('animTitleText')
+        }
 
       if(screenPosition > positionContact) {
         contact.classList.add('animTitleText')
@@ -113,17 +121,13 @@ $('.owl-carousel').owlCarousel({
     mouseDrag:true,
     responsive:{
         0:{
-            dots:true,
-            nav:false,
             autoplay: true,
             autoplayTimeout: 3000,
             autoplayHoverPause: true,
             items:1
         },
-        // 600:{
-        // },
-        1000:{
-            items:2
+        992:{
+            items: 2,
         }
     }
     })

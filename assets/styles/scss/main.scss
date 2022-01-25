@@ -613,6 +613,115 @@ button {
 }
 // End portfolio
 
+.mobile-portfolio {
+    display: none;
+    &-list {      
+        width: 242px;
+        height: 480px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 30px;
+        padding: 5px;
+
+        .hidden {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 94%;
+            height: 88%;
+            object-fit: cover;
+            z-index: 3;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            transition: 1s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+
+            &__btn {
+                width: 200px;
+                height: 50px;
+                border-radius: 10px;
+                background-color: var(--basic);
+                color: var(--white);
+                font-size: 20px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+
+        &:hover .hidden {
+            opacity: 1;
+        }
+
+    }
+    .iphone {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            z-index: 2;
+    }
+    &__img {
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 95%;
+        max-height: 100%;
+        object-fit: cover;
+        z-index: 1;
+        border-radius: 20px;
+    }
+    .owl-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.owl-nav button {
+    width: 50px !important;
+    height: 50px !important;
+    background-color: var(--basic) !important;
+    border-radius: 50% !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 60px !important;
+    color: #000 !important;
+    outline: none !important;
+}
+.owl-nav button span {
+    position: absolute;
+    top: -5px;
+    display: block;
+    width: 50px !important;
+    height: 50px !important;
+    z-index: 99;
+    color: var(--white);
+    font-weight: 300;
+}
+.owl-nav button:hover {
+    background-color: var(--basic-text) !important;
+}
+.owl-prev {
+    left: 0px;
+}
+.owl-next {
+    right: 0px;
+}
+.owl-carousel button.owl-dot span{
+    background-color: var(--basic) !important;
+}
+.owl-carousel button.active span{
+    background-color: tomato !important;
+}
+
 .contact {
     width: 100%;
     height: auto;

@@ -234,7 +234,8 @@
         padding: 0 20px;
     }
     .home {
-        margin-top: 0px;
+        margin-top: 50px;
+        margin-bottom: 150px;
         .container {
             height: auto;
         }
@@ -246,6 +247,11 @@
                 span {
                     display: none;
                 }
+            }
+        }
+        &-img {
+            &__photo {
+                width: 100%;
             }
         }
     }
@@ -302,32 +308,28 @@
                 bottom: 5px;
             }
         }
+        .psd {
+            margin: 25px auto;
+        }
     }
     // End technology
 
     .portfolio {
-        .container {
-            padding: 0 10px;
-        }
-        .title__text {
-            margin-bottom: 50px;
-        }
-        margin: 50px 0;
-        &-item {
-            max-height: 375px;
-            padding: 0;
-        }
-    
-        &-list {
-            width: 100%;
-            height: 200px;
-            margin: 0;
-            padding: 0;
-            margin-bottom: 20px;
-        }
-    
+        display: none;
     }
     // End portfolio
+    
+    .mobile-portfolio {
+        display: block;
+        margin: 50px 0 150px 0;
+    }
+        
+    .owl-prev {
+        left: -20px;
+    }
+    .owl-next {
+        right: -20px;
+    }
 }
 
 @media screen and(max-width: 420px) {
