@@ -315,7 +315,9 @@
     // End technology
 
     .portfolio {
-        display: none;
+        &_desctop {
+            display: none;
+        }
     }
     // End portfolio
     
