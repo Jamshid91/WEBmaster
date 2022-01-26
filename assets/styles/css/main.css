@@ -2150,9 +2150,11 @@ button {
   }
   .home .container {
     height: auto;
+    padding-top: 100px;
   }
   .home-title {
     width: 100%;
+    margin-top: 0;
   }
   .home-title__text {
     font-size: 45px;

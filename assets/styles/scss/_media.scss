@@ -240,10 +240,12 @@
         margin-bottom: 150px;
         .container {
             height: auto;
+            padding-top: 100px;
         }
     
         &-title {
             width: 100%;
+            margin-top: 0;
             &__text {
                 font-size: 45px;
                 span {
