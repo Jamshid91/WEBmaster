@@ -9,17 +9,23 @@ let borderBottomOne = document.querySelector('.home-title__text .borderOne');
 let borderBottomTwo = document.querySelector('.home-title__text .borderTwo');
 let allPortfolioBtn = document.querySelector('.allProjects-btn');
 let allPortfolio = document.querySelector('.portfolio-item');
+let loader = document.querySelector('.loader');
 
 window.onload = function() {
     homeImg.classList.add('addHomeImg');
     homeTitle.classList.add('addHomeTitle');
+    
+    setTimeout(() => {
+        loader.style.display = 'none'
+    }, 3000);
 
     setTimeout(() => {
         borderBottomOne.classList.add('borderBottom')
-    }, 1000);
+    }, 3000);
     setTimeout(() => {
         borderBottomTwo.classList.add('borderBottom')
-    }, 2000);
+    }, 4000);
+
 }
 
 // closeInfo.addEventListener('click', () => {
@@ -33,12 +39,15 @@ window.addEventListener('scroll', () => {
     const portfolio = document.querySelector('.portfolio span');
     const mobilePortfolio = document.querySelector('.mobile-portfolio span');
     const contact = document.querySelector('.contact span');
+    const aboutMe = document.querySelector('.aboutMe');
+    const advertising = document.querySelector('.advertising');
 
     const positioncooperate = cooperate.getBoundingClientRect().top;
     const positiontechnology = technology.getBoundingClientRect().top;
     const positionportfolio = portfolio.getBoundingClientRect().top;
     const positionMobportfolio = mobilePortfolio.getBoundingClientRect().top;
     const positionContact = contact.getBoundingClientRect().top;
+    const positionAboutMe = aboutMe.getBoundingClientRect().top;
 
     const screenPosition = window.innerHeight;
 
@@ -73,6 +82,11 @@ window.addEventListener('scroll', () => {
         contact.classList.remove('animTitleText')
       }
 
+    //   if(screenPosition > positionAboutMe) {
+    //     advertising.style.display = 'flex'
+    //   } else {
+    //     advertising.classList.remove('animTitleText')
+    //   }
     //   Scrollbar
     let totalHight = document.body.scrollHeight - window.innerHeight;
     let progressHight = (window.pageYOffset / totalHight) * 100;
@@ -87,6 +101,12 @@ window.addEventListener('scroll', () => {
     } else {
         header.classList.remove('headerShadow')
     }
+
+    window.onclick = function(event) {
+        if (event.target == advertising) {
+            advertising.style.display = "none";
+        }
+      }
 });
 
 function activeNavigation() {
@@ -130,6 +150,17 @@ $('.owl-carousel').owlCarousel({
             items: 2,
         }
     }
-    })
+    });
+
+    var typed = new Typed('.typed', {
+        strings: ["Чистый и понятный код (БЭМ)", "Быстро и качественно", "Адаптивный и анимированный"],
+              stringsElement: null,
+              typeSpeed: 40,
+              startDelay: 1200,
+              backSpeed: 20,
+              backDelay: 500,
+              loop: true,
+              cursorChar: "|",
+      });
 
 
