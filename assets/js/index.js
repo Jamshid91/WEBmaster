@@ -29,9 +29,6 @@ window.onload = function() {
 
 }
 
-// closeInfo.addEventListener('click', () => {
-//     infoBox.style.display = 'none'
-// })
 
 window.addEventListener('scroll', () => {
     // title text scroll anim
@@ -82,12 +79,6 @@ window.addEventListener('scroll', () => {
       } else {
         contact.classList.remove('animTitleText')
       }
-
-    //   if(screenPosition > positionAboutMe) {
-    //     advertising.style.display = 'flex'
-    //   } else {
-    //     advertising.classList.remove('animTitleText')
-    //   }
     //   Scrollbar
     let totalHight = document.body.scrollHeight - window.innerHeight;
     let progressHight = (window.pageYOffset / totalHight) * 100;
