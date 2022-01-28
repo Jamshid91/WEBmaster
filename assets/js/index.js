@@ -17,7 +17,7 @@ window.onload = function() {
     
     setTimeout(() => {
         loader.style.display = 'none'
-    }, 50);
+    }, 0);
     
     setTimeout(() => {
         borderBottomOne.classList.add('borderBottom')
