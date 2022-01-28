@@ -17,14 +17,15 @@ window.onload = function() {
     
     setTimeout(() => {
         loader.style.display = 'none'
-    }, 0);
+        window.scrollTo(0, 0)
+    }, 1500);
     
     setTimeout(() => {
         borderBottomOne.classList.add('borderBottom')
-    }, 1000);
+    }, 2000);
     setTimeout(() => {
         borderBottomTwo.classList.add('borderBottom')
-    }, 2000);
+    }, 2500);
 
 }
 
