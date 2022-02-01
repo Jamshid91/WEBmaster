@@ -144,15 +144,4 @@ $('.owl-carousel').owlCarousel({
     }
     });
 
-    var typed = new Typed('.typed', {
-        strings: ["Чистый и понятный код (БЭМ)", "Быстро и качественно", "Адаптивный и анимированный"],
-              stringsElement: null,
-              typeSpeed: 40,
-              startDelay: 1200,
-              backSpeed: 20,
-              backDelay: 500,
-              loop: true,
-              cursorChar: "|",
-      });
-
 
