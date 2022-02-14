@@ -1563,7 +1563,7 @@ button {
 }
 
 .contact-form form .form__btn:hover {
-  background-color: var(--basic);
+  background-color: #11a192;
 }
 
 .footer {
@@ -2199,14 +2199,9 @@ button {
     margin-top: 20px;
     cursor: pointer;
     font-size: 18px;
-    background-color: var(--basic-text);
-    color: var(--white);
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
-  }
-  .contact-form form .form__btn:hover {
-    background-color: var(--basic);
   }
 }
 
@@ -2389,13 +2384,8 @@ button {
     margin-top: 20px;
     cursor: pointer;
     font-size: 18px;
-    background-color: var(--basic-text);
-    color: var(--white);
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
-  }
-  .contact-form form .form__btn:hover {
-    background-color: var(--basic);
   }
 }
