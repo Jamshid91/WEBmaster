@@ -128,9 +128,6 @@ $('.owl-carousel').owlCarousel({
     mouseDrag:true,
     responsive:{
         0:{
-            autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: true,
             items:1
         },
         992:{
