@@ -4,72 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Создаю качественный сайт</title>
     <link rel="shortcut icon" href="assets/images/png/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Asettings%3A">
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="assets/styles/css/carousel.css">
-    <link rel="stylesheet" href="assets/styles/css/thema.css">
-    <link rel="stylesheet"  href="assets/styles/css/main.css">
+    <link rel="stylesheet" href="assets/styles/css/main.css">
 </head>
 <body>
     <div class="scroll">
         <i class="fas fa-cog"></i>
     </div>
+
+    <div class="themeBtn">
+    </div>
+
     <header class="header">
         <div class="container">
-            <div class="header-nav flex flex-space align-center">
+            <div class="header-nav flex flex-center align-center">
                 <div class="header-logo">
                     <a href="" class="header-logo__link"><strong>WEB</strong>master</a>
                 </div>
 
-                <div class="header-navigation flex flex-center align-center">
+                <div class="header-navigation flex flex-center align-center">  
+                     <div class="themeBtn"></div>
                     <ul class="header-item flex flex-around">
                         <li class="header-list active">
                             <a href="#home" class="header-list__link"><i class="fad fa-home-lg"></i>
-                                <span class="text">главная</span></a>
+                                <span class="text lang-home">главная</span></a>
                         </li>
                         <li class="header-list">
                             <a href="#aboutMe" class="header-list__link"><i class="fad fa-user-tie"></i>
-                                <span class="text">обо мне</span></a>
+                                <span class="text lang-me">обо мне</span></a>
                         </li>
                         <li class="header-list">
                             <a href="#portfolio" class="header-list__link"> <i class="fad fa-laptop-code"></i>
-                                <span class="text">портфолио</span></a>
+                                <span class="text lang-portfolio">портфолио</span></a>
                         </li>
                         <li class="header-list">
                             <a href="#footer" class="header-list__link"><i class="fad fa-phone-rotary"></i>
-                                <span class="text">контакт</span></a>
+                                <span class="text lang-contact">контакт</span></a>
                         </li>
                         <div class="indicator"></div>
                     </ul>
                 </div>
+                    <div class="lang">
+                        <div class="lang-item">
+                            <div class="lang-icon">
+                            </div>
+                            <span class="lang__text lang-langText">Английский</span>
+                        </div>
+                    </div>
 
-                    <button class="header-btn">
-                        <a href="https://t.me/FWD02" class="header-btn__link">Свяжитесь со мной</a>
-                    </button>
             </div>
-
-            <!-- <div class="header-item">
-                <div class="header-title"></div>
-                <div class="header-img">
-                    <img src="assets/images/png/frilanser.png" alt="" class="header-img__photo">
-                </div>
-            </div> -->
         </div>
     </header>
     <!-- End header -->
-
+    <i class="fa-solid fa-sun-bright"></i>
     <section class="home" id="home">
         <div class="container">
             <div class="home-item">
                 <div class="home-title">
-                    <h1 class="home-title__text">Ваш Надежный
-                        <span class="borderOne"></span>
+                    <h1 class="home-title__text"><span class=" lang-homeTitle">Ваш Надежный</span>
+                        <span class="border borderOne"></span>
                     </h1>
-                    <h1 class="home-title__text wow animated bounceInLeft">Технологический Партнер
-                        <span class="borderTwo"></span>
+                    <h1 class="home-title__text wow animated bounceInLeft"><span class="lang-homeTitleText">Технологический Партнер</span>
+                        <span class="border borderTwo"></span>
                     </h1>
-                    <p class="home-title__info-text">В настоящее время очень важно иметь собственный веб-сайт для развития вашего бизнеса.</p>
+                    <p class="home-title__info-text lang-homeTitleInfoText">В настоящее время очень важно иметь собственный веб-сайт для развития вашего бизнеса.</p>
                 </div>
                 <div class="home-img">
                     <img src="assets/images/png/frontend.png" alt="developer.png" class="home-img__photo">
@@ -84,10 +86,10 @@
             <div class="container">
                 <div class="flex flex-center">
                     <div class="cooperate-item">
-                        <h2 class="title__text">Сотрудничать со мной
-                            <span></span>
+                        <h2 class="title__text"><span class="lang-cooperateTitle">Сотрудничать со мной</span>
+                            <span class="border"></span>
                         </h2>
-                        <p class="cooperate__info-text">Предлагаю своим клиентам качественные решения исходя из требований бизнеса и бюджета. Я выполняю проекты в срок, в соответствии с бюджетом клиента и четкими спецификациями.
+                        <p class="cooperate__info-text lang-cooperateText">Предлагаю своим клиентам качественные решения исходя из требований бизнеса и бюджета. Я выполняю проекты в срок, в соответствии с бюджетом клиента и четкими спецификациями.
                             Я всегда поддерживаю клиента, когда заканчиваю работу.
                             Моя цель - построить долгосрочные отношения с клиентом, который доверяет нам год за годом.</p>
                 </div>
@@ -104,10 +106,10 @@
 
                <div class="aboutMe-list">
                    <div class="left-info flex flex-center align-center">
-                        <h2 class="left-info__title">Привет! <br> Меня зовут Жамшид <br> Я Front-End программист</h2>
+                        <h2 class="left-info__title"><span class="lang-aboutMe1">Привет!</span> <br> <span class="lang-aboutMe2">Меня зовут Жамшид</span> <br> <span class="lang-aboutMe3">Я Front-End программист</span></h2>
                    </div>
                    <div class="right-info flex flex-center align-center">
-                       <p class="right-info__text">Имею опыт работы в сфере программирования Front-End более 3-х лет. С того дня я участвовал во многих проектах и ​​набирался опыта.</p>
+                       <p class="right-info__text lang-aboutMeInfo">Имею опыт работы в сфере программирования Front-End более 3-х лет. С того дня я участвовал во многих проектах и ​​набирался опыта.</p>
                    </div>
                </div>
             </div>
@@ -118,8 +120,8 @@
         <section class="technology" id="technology">
             <div class="container">
                 <div class="flex-center flex text-center">
-                    <h2 class="title__text">Технология
-                        <span></span>
+                    <h2 class="title__text"><span class="lang-technologyTitle">Технология</span> 
+                        <span class="border"></span>
                     </h2>
                 </div>
                 <div class="technology-item">
@@ -152,8 +154,8 @@
                         <span class="technology-list__info">jQuery</span>
                     </div>
                     <div class="technology-list">
-                        <img  class="technology-list__img" src="assets/images/png/wp.png" alt="html.png">
-                        <span class="technology-list__info">Wordpress</span>
+                        <img  class="technology-list__img" src="assets/images/png/gsup.png" alt="html.png">
+                        <span class="technology-list__info">GSAP</span>
                     </div>
                     <div class="technology-list">
                         <img  class="technology-list__img" src="assets/images/png/github.png" alt="html.png">
@@ -175,99 +177,105 @@
         <section class="portfolio" id="portfolio">
             <div class="container portfolio_desctop">
                 <div class="flex-center flex text-center">
-                    <h2 class="title__text">Портфолио
-                        <span></span>
+                    <h2 class="title__text"><span class="lang-portfolioTitle">Портфолио</span>
+                        <span class="border"></span>
                     </h2>
                 </div>
                 <div class="portfolio-item owl-carousel owl-theme">
                     <div class="item portfolio-list">
+                        <img src="assets/images/png/Банкротсво.png" alt="" class="portfolio__img">
+                        <div class="hidden">
+                            <a href="https://jamshid91.github.io/project/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
+                        </div>
+                    </div>
+                    <div class="item portfolio-list">
                         <img src="assets/images/png/BNBPrime.png" alt="" class="portfolio__img">
                         <div class="hidden">
-                            <a href="https://jamshid91.github.io/BNBPrime/"><button class="hidden__btn">Перейти на сайт</button></a>
+                            <a href="https://jamshid91.github.io/BNBPrime/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
                         </div>
                     </div>
                     <div class="item portfolio-list">
                         <img src="assets/images/png/Абхазия.png" alt="" class="portfolio__img">
                         <div class="hidden">
-                            <a href="https://jamshid91.github.io/pro-travel/"><button class="hidden__btn">Перейти на сайт</button></a>
+                            <a href="https://jamshid91.github.io/pro-travel/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
                         </div>
                     </div>
                     <div class="item portfolio-list">
                         <img src="assets/images/png/myFirst.png" alt="" class="portfolio__img">
                         <div class="hidden">
-                            <a href="https://jamshid91.github.io/myfirst.casa/"><button class="hidden__btn">Перейти на сайт</button></a>
+                            <a href="https://jamshid91.github.io/myfirst.casa/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
                         </div>
                     </div>
                     <div class="item portfolio-list">
                         <img src="assets/images/png/cryptoX.png" alt="" class="portfolio__img">
                         <div class="hidden">
-                            <a href="https://jamshid91.github.io/CryptoX/"><button class="hidden__btn">Перейти на сайт</button></a>
+                            <a href="https://jamshid91.github.io/CryptoX/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
                         </div>
                     </div>
                     <div class="item portfolio-list">
                         <img src="assets/images/png/maximum.png" alt="" class="portfolio__img">
                         <div class="hidden">
-                            <a href="https://jamshid91.github.io/maximum/"><button class="hidden__btn">Перейти на сайт</button></a>
+                            <a href="https://jamshid91.github.io/maximum/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
                         </div>
                     </div>
                     <div class="item portfolio-list">
                         <img src="assets/images/png/denta.png" alt="" class="portfolio__img">
                         <div class="hidden">
-                            <a href="https://jamshid91.github.io/denta-service/"><button class="hidden__btn">Перейти на сайт</button></a>
+                            <a href="https://jamshid91.github.io/denta-service/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
                         </div>
                     </div>
                     <div class="item portfolio-list">
                         <img src="assets/images/png/levelUp-course.png" alt="" class="portfolio__img">
                         <div class="hidden">
-                            <a href="https://jamshid91.github.io/course-levelUp/"><button class="hidden__btn">Перейти на сайт</button></a>
+                            <a href="https://jamshid91.github.io/course-levelUp/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
                         </div>
                     </div>
                     <div class="item portfolio-list">
                         <img src="assets/images/png/levelUp-workshop.png" alt="" class="portfolio__img">
                         <div class="hidden">
-                            <a href="https://jamshid91.github.io/author-course/"><button class="hidden__btn">Перейти на сайт</button></a>
+                            <a href="https://jamshid91.github.io/author-course/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
                         </div>
                     </div>
                     <div class="item portfolio-list">
                         <img src="assets/images/png/logistik.png" alt="" class="portfolio__img">
                         <div class="hidden">
-                            <a href="https://jamshid91.github.io/logistic/"><button class="hidden__btn">Перейти на сайт</button></a>
+                            <a href="https://jamshid91.github.io/logistic/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
                         </div>
                     </div>
                     <div class="item portfolio-list">
                         <img src="assets/images/png/energo.png" alt="" class="portfolio__img">
                         <div class="hidden">
-                            <a href="https://jamshid91.github.io/-.ru/"><button class="hidden__btn">Перейти на сайт</button></a>
+                            <a href="https://jamshid91.github.io/-.ru/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
                         </div>
                     </div>
                     <div class="item portfolio-list">
                         <img src="assets/images/png/degree.png" alt="" class="portfolio__img">
                         <div class="hidden">
-                            <a href="https://jamshid91.github.io/Degree/"><button class="hidden__btn">Перейти на сайт</button></a>
+                            <a href="https://jamshid91.github.io/Degree/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
                         </div>
                     </div>
                     <div class="item portfolio-list">
                         <img src="assets/images/png/letcop.png" alt="" class="portfolio__img">
                         <div class="hidden">
-                            <a href="https://jamshid91.github.io/letcop_home/"><button class="hidden__btn">Перейти на сайт</button></a>
+                            <a href="https://jamshid91.github.io/letcop_home/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
                         </div>
                     </div>
                     <div class="item portfolio-list">
                         <img src="assets/images/png/letcop-edit.png" alt="" class="portfolio__img">
                         <div class="hidden">
-                            <a href="https://jamshid91.github.io/edit-profile/"><button class="hidden__btn">Перейти на сайт</button></a>
+                            <a href="https://jamshid91.github.io/edit-profile/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
                         </div>
                     </div>
                     <div class="item portfolio-list">
                         <img src="assets/images/png/workshop.png" alt="" class="portfolio__img">
                         <div class="hidden">
-                            <a href="https://jamshid91.github.io/letcop-workshop/"><button class="hidden__btn">Перейти на сайт</button></a>
+                            <a href="https://jamshid91.github.io/letcop-workshop/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
                         </div>
                     </div>
                     <div class="item portfolio-list">
                         <img src="assets/images/png/letcop-paid-service.png" alt="" class="portfolio__img">
                         <div class="hidden">
-                            <a href="https://jamshid91.github.io/letcop-services/"><button class="hidden__btn">Перейти на сайт</button></a>
+                            <a href="https://jamshid91.github.io/letcop-services/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
                         </div>
                     </div>
                 </div>
@@ -278,117 +286,124 @@
 
             <!-- Mobile Portfolio -->
             
-        <section class="mobile-portfolio" id="portfolio">
-            <div class="container">
-                <div class="flex-center flex text-center">
-                    <h2 class="title__text">Портфолио
-                        <span></span>
-                    </h2>
-                </div>
-                <div class="mobile-portfolio-item  owl-carousel owl-theme" id="mobile-portfolio">
-                    <div class="item mobile-portfolio-list">
-                        <img src="assets/images/png/S9.png" alt="" class="iphone">
-                        <img src="assets/images/png/BNBPrime-mob.png" alt="" class="mobile-portfolio__img">
-                        <div class="hidden">
-                        <a href="https://jamshid91.github.io/BNBPrime/"><button class="hidden__btn">Перейти на сайт</button></a>
+            <div class="mobile-portfolio" id="portfolio">
+                <div class="container">
+                    <div class="flex-center flex text-center">
+                        <h2 class="title__text">Портфолио
+                            <span class="border"></span>
+                        </h2>
                     </div>
-                    </div>
-                    <div class="item mobile-portfolio-list">
+                    <div class="mobile-portfolio-item  owl-carousel owl-theme" id="mobile-portfolio">
+                        <div class="item mobile-portfolio-list">
                             <img src="assets/images/png/S9.png" alt="" class="iphone">
-                            <img src="assets/images/png/Абхазия-моб.png" alt="" class="mobile-portfolio__img">
+                            <img src="assets/images/png/Банкротсво-mobile.png" alt="" class="mobile-portfolio__img">
                             <div class="hidden">
-                            <a href="https://jamshid91.github.io/pro-travel/"><button class="hidden__btn">Перейти на сайт</button></a>
+                            <a href="https://jamshid91.github.io/project/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
                         </div>
-                    </div>
-                    <div class="item mobile-portfolio-list">
+                        </div>
+                        <div class="item mobile-portfolio-list">
                             <img src="assets/images/png/S9.png" alt="" class="iphone">
-                            <img src="assets/images/png/myFirst-mobile.png" alt="" class="mobile-portfolio__img">
+                            <img src="assets/images/png/BNBPrime-mob.png" alt="" class="mobile-portfolio__img">
                             <div class="hidden">
-                            <a href="https://jamshid91.github.io/myfirst.casa/"><button class="hidden__btn">Перейти на сайт</button></a>
+                            <a href="https://jamshid91.github.io/BNBPrime/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
                         </div>
-                    </div>
-                    <div class="item mobile-portfolio-list">
-                            <img src="assets/images/png/S9.png" alt="" class="iphone">
-                            <img src="assets/images/png/cryptoX-mobile.png" alt="" class="mobile-portfolio__img">
-                            <div class="hidden">
-                            <a href="https://jamshid91.github.io/CryptoX/"><button class="hidden__btn">Перейти на сайт</button></a>
                         </div>
-                    </div>
-                    <div class="item mobile-portfolio-list">
-                            <img src="assets/images/png/S9.png" alt="" class="iphone">
-                            <img src="assets/images/png/maximum-mobile.png" alt="" class="mobile-portfolio__img">
-                            <div class="hidden">
-                            <a href="https://jamshid91.github.io/maximum/"><button class="hidden__btn">Перейти на сайт</button></a>
+                        <div class="item mobile-portfolio-list">
+                                <img src="assets/images/png/S9.png" alt="" class="iphone">
+                                <img src="assets/images/png/Абхазия-моб.png" alt="" class="mobile-portfolio__img">
+                                <div class="hidden">
+                                <a href="https://jamshid91.github.io/pro-travel/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item mobile-portfolio-list">
-                            <img src="assets/images/png/S9.png" alt="" class="iphone">
-                            <img src="assets/images/png/denta-mobile.png" alt="" class="mobile-portfolio__img">
-                            <div class="hidden">
-                            <a href="https://jamshid91.github.io/denta-service/"><button class="hidden__btn">Перейти на сайт</button></a>
+                        <div class="item mobile-portfolio-list">
+                                <img src="assets/images/png/S9.png" alt="" class="iphone">
+                                <img src="assets/images/png/myFirst-mobile.png" alt="" class="mobile-portfolio__img">
+                                <div class="hidden">
+                                <a href="https://jamshid91.github.io/myfirst.casa/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item mobile-portfolio-list">
-                            <img src="assets/images/png/S9.png" alt="" class="iphone">
-                            <img src="assets/images/png/levelUp-mobile.png" alt="" class="mobile-portfolio__img">
-                            <div class="hidden">
-                            <a href="https://jamshid91.github.io/course-levelUp/"><button class="hidden__btn">Перейти на сайт</button></a>
+                        <div class="item mobile-portfolio-list">
+                                <img src="assets/images/png/S9.png" alt="" class="iphone">
+                                <img src="assets/images/png/cryptoX-mobile.png" alt="" class="mobile-portfolio__img">
+                                <div class="hidden">
+                                <a href="https://jamshid91.github.io/CryptoX/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item mobile-portfolio-list">
-                            <img src="assets/images/png/S9.png" alt="" class="iphone">
-                            <img src="assets/images/png/levelUp-work_mobile.png" alt="" class="mobile-portfolio__img">
-                            <div class="hidden">
-                            <a href="https://jamshid91.github.io/author-course/"><button class="hidden__btn">Перейти на сайт</button></a>
+                        <div class="item mobile-portfolio-list">
+                                <img src="assets/images/png/S9.png" alt="" class="iphone">
+                                <img src="assets/images/png/maximum-mobile.png" alt="" class="mobile-portfolio__img">
+                                <div class="hidden">
+                                <a href="https://jamshid91.github.io/maximum/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item mobile-portfolio-list">
-                            <img src="assets/images/png/S9.png" alt="" class="iphone">
-                            <img src="assets/images/png/energo-mob.png" alt="" class="mobile-portfolio__img">
-                            <div class="hidden">
-                            <a href="https://jamshid91.github.io/-.ru/"><button class="hidden__btn">Перейти на сайт</button></a>
+                        <div class="item mobile-portfolio-list">
+                                <img src="assets/images/png/S9.png" alt="" class="iphone">
+                                <img src="assets/images/png/denta-mobile.png" alt="" class="mobile-portfolio__img">
+                                <div class="hidden">
+                                <a href="https://jamshid91.github.io/denta-service/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item mobile-portfolio-list">
-                            <img src="assets/images/png/S9.png" alt="" class="iphone">
-                            <img src="assets/images/png/degree-mob.png" alt="" class="mobile-portfolio__img">
-                            <div class="hidden">
-                            <a href="https://jamshid91.github.io/Degree/"> <button class="hidden__btn">Перейти на сайт</button></a>
+                        <div class="item mobile-portfolio-list">
+                                <img src="assets/images/png/S9.png" alt="" class="iphone">
+                                <img src="assets/images/png/levelUp-mobile.png" alt="" class="mobile-portfolio__img">
+                                <div class="hidden">
+                                <a href="https://jamshid91.github.io/course-levelUp/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item mobile-portfolio-list">
-                            <img src="assets/images/png/S9.png" alt="" class="iphone">
-                            <img src="assets/images/png/letcop-mob.png" alt="" class="mobile-portfolio__img">
-                            <div class="hidden">
-                            <a href="https://jamshid91.github.io/letcop_home/"> <button class="hidden__btn">Перейти на сайт</button></a>
+                        <div class="item mobile-portfolio-list">
+                                <img src="assets/images/png/S9.png" alt="" class="iphone">
+                                <img src="assets/images/png/levelUp-work_mobile.png" alt="" class="mobile-portfolio__img">
+                                <div class="hidden">
+                                <a href="https://jamshid91.github.io/author-course/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item mobile-portfolio-list">
-                            <img src="assets/images/png/S9.png" alt="" class="iphone">
-                            <img src="assets/images/png/letcop-edit_mob.png" alt="" class="mobile-portfolio__img">
-                            <div class="hidden">
-                            <a href="https://jamshid91.github.io/edit-profile/"> <button class="hidden__btn">Перейти на сайт</button></a>
+                        <div class="item mobile-portfolio-list">
+                                <img src="assets/images/png/S9.png" alt="" class="iphone">
+                                <img src="assets/images/png/energo-mob.png" alt="" class="mobile-portfolio__img">
+                                <div class="hidden">
+                                <a href="https://jamshid91.github.io/-.ru/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item mobile-portfolio-list">
-                            <img src="assets/images/png/S9.png" alt="" class="iphone">
-                            <img src="assets/images/png/letcop-workshop_mob.png" alt="" class="mobile-portfolio__img">
-                            <div class="hidden">
-                            <a href="https://jamshid91.github.io/letcop-workshop/"><button class="hidden__btn">Перейти на сайт</button></a>
+                        <div class="item mobile-portfolio-list">
+                                <img src="assets/images/png/S9.png" alt="" class="iphone">
+                                <img src="assets/images/png/degree-mob.png" alt="" class="mobile-portfolio__img">
+                                <div class="hidden">
+                                <a href="https://jamshid91.github.io/Degree/"> <button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item mobile-portfolio-list">
-                            <img src="assets/images/png/S9.png" alt="" class="iphone">
-                            <img src="assets/images/png/letcop-ser_mob.png" alt="" class="mobile-portfolio__img">
-                            <div class="hidden">
-                            <a href="https://jamshid91.github.io/letcop-services/"><button class="hidden__btn">Перейти на сайт</button></a>
+                        <div class="item mobile-portfolio-list">
+                                <img src="assets/images/png/S9.png" alt="" class="iphone">
+                                <img src="assets/images/png/letcop-mob.png" alt="" class="mobile-portfolio__img">
+                                <div class="hidden">
+                                <a href="https://jamshid91.github.io/letcop_home/"> <button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
+                            </div>
                         </div>
+                        <div class="item mobile-portfolio-list">
+                                <img src="assets/images/png/S9.png" alt="" class="iphone">
+                                <img src="assets/images/png/letcop-edit_mob.png" alt="" class="mobile-portfolio__img">
+                                <div class="hidden">
+                                <a href="https://jamshid91.github.io/edit-profile/"> <button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
+                            </div>
+                        </div>
+                        <div class="item mobile-portfolio-list">
+                                <img src="assets/images/png/S9.png" alt="" class="iphone">
+                                <img src="assets/images/png/letcop-workshop_mob.png" alt="" class="mobile-portfolio__img">
+                                <div class="hidden">
+                                <a href="https://jamshid91.github.io/letcop-workshop/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
+                            </div>
+                        </div>
+                        <div class="item mobile-portfolio-list">
+                                <img src="assets/images/png/S9.png" alt="" class="iphone">
+                                <img src="assets/images/png/letcop-ser_mob.png" alt="" class="mobile-portfolio__img">
+                                <div class="hidden">
+                                <a href="https://jamshid91.github.io/letcop-services/"><button class="hidden__btn lang-openSite">Перейти на сайт</button></a>
+                            </div>
+                        </div>
+                        
+                <!-- -->
                     </div>
-                    
-            <!-- -->
                 </div>
             </div>
-        </section>
         </section>
         <!-- End portfolio -->
 
@@ -396,39 +411,38 @@
         <section class="contact">
             <div class="container">
                 <div class="flex-center flex text-center">
-                    <h2 class="title__text">Напишите мне
-                        <span class="contact__span"></span>
+                    <h2 class="title__text"><span class="lang-contactTitle">Напишите мне</span>
+                        <span class="contact__span border"></span>
                     </h2>
                 </div>
                 <div class="contact-item">
-                    <!-- <div class="contact-info"></div> -->
                 <div class="contact-form">
                     <form id="form">
                         <div class="form__box" for="">
                             <input class="form__inp" id="userName" type="text" maxlength="14" placeholder=" " required>
-                            <label for="userName" class="form__label">Ваше имя</label>
+                            <label for="userName" class="form__label lang-yourName">Ваше имя</label>
                             <i class="fas fa-user"></i>
-                            <small></small>
+                            <small class="lang-error-name"></small>
                         </div>
                         <div class="form__box" for="">
                             <input class="form__inp" id="userEmail" type="email" placeholder=" " required>
-                            <label for="userEmail" class="form__label">Ваше почта</label>
+                            <label for="userEmail" class="form__label lang-yourEmail">Ваше почта</label>
                             <i class="fas fa-envelope"></i>
                             <small></small>
                         </div>
                         <div class="form__box" for="">
                             <input class="form__inp" id="userPass" type="password" placeholder=" " required>
-                            <label for="userPass" class="form__label">Ваше парол</label>
+                            <label for="userPass" class="form__label lang-yourPass">Ваше пароль</label>
                             <i class="fas fa-lock"></i>
                             <small></small>
                         </div>
                         <div class="form__box">
                             <textarea class="form__com" id="message" placeholder=" " required></textarea>
-                            <label for="message" class="form__label">Оставить комментарий</label>
+                            <label for="message" class="form__label lang-comments">Оставить комментарий</label>
                             <i class="fas fa-comments"></i>
                             <small></small>
                         </div>
-                        <button type="button" id="submitForm" class="form__btn">Отправить</button>
+                        <button type="button" id="submitForm" class="form__btn lang-submit">Отправить</button>
 
 
                         <div class="circle-sub"></div>
@@ -445,10 +459,11 @@
         <footer class="footer" id="footer">
             <div class="container">
                 <a class="footer__info hover" href="https://t.me/FWD02"><i class="fab fa-telegram-plane"></i> @FWD02</a> <br> <br>
-                <a class="footer__info hover" href="tel:950065010"><i class="fas fa-phone"></i> 950065010</a> <br> <br>
-                <span class="footer__info">WEBmaster 2022</span>
+                <a class="footer__info hover" href="tel:+998950065010"><i class="fas fa-phone"></i> +998950065010</a> <br> <br>
+                <span class="footer__info"><strong>WEB</strong>master 2022</span>
             </div>
         </footer>
+        <!-- End footer -->
 
 
           <div class="loader">
@@ -466,7 +481,9 @@
 
     <script src="assets/js/plugins/jQuery.js"></script>   
     <script src="assets/js/plugins/cloudflare.js"></script>  
-    <script src="assets/js/index.js"></script> 
     <script src="assets/js/form.js"></script>
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/js/index.js"></script> 
+    <script src="assets/js/thema.js"></script>
 </body>
 </html>

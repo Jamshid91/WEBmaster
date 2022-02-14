@@ -3,8 +3,6 @@ let settings = document.querySelector('.fa-cog');
 let header = document.querySelector('.header');
 let infoBox = document.querySelector('.open-text');
 let closeInfo = document.querySelector('.open-text .fa-times-circle');
-let homeImg = document.querySelector('.home .home-img')
-let homeTitle = document.querySelector('.home .home-title')
 let borderBottomOne = document.querySelector('.home-title__text .borderOne');
 let borderBottomTwo = document.querySelector('.home-title__text .borderTwo');
 let allPortfolioBtn = document.querySelector('.allProjects-btn');
@@ -12,9 +10,6 @@ let allPortfolio = document.querySelector('.portfolio-item');
 let loader = document.querySelector('.loader');
 
 window.onload = function() {
-    homeImg.classList.add('addHomeImg');
-    homeTitle.classList.add('addHomeTitle');
-    
     setTimeout(() => {
         loader.style.display = 'none'
         window.scrollTo(0, 0)
@@ -32,11 +27,11 @@ window.onload = function() {
 
 window.addEventListener('scroll', () => {
     // title text scroll anim
-    const cooperate = document.querySelector('.cooperate span');
-    const technology = document.querySelector('.technology span');
-    const portfolio = document.querySelector('.portfolio span');
-    const mobilePortfolio = document.querySelector('.mobile-portfolio span');
-    const contact = document.querySelector('.contact span');
+    const cooperate = document.querySelector('.cooperate .border');
+    const technology = document.querySelector('.technology .border');
+    const portfolio = document.querySelector('.portfolio .border');
+    const mobilePortfolio = document.querySelector('.mobile-portfolio .border');
+    const contact = document.querySelector('.contact .border');
     const aboutMe = document.querySelector('.aboutMe');
     const advertising = document.querySelector('.advertising');
 

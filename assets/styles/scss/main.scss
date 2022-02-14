@@ -1,5 +1,6 @@
-@import 'layout';
+
 @import 'color';
+@import 'layout';
 @import 'mixin';
 @import 'font';
 
@@ -19,15 +20,18 @@ html {
 ::-webkit-selection {background: var(--basic); color:var(--white);}
 
 .container {
-    max-width: 1200px;
+    max-width: 1200px; 
     margin: 0 auto;
 }
 
 body {
     font-family: 'YanoneKaffeesatz', sans-serif; 
     position: relative;
+    background-color: var(--white);
+    transition: .3s all;
 }
 p {
+    font-family: 'Poppins', sans-serif; 
     font-size: 25px;
 }
 
@@ -47,15 +51,12 @@ body::-webkit-scrollbar {
 }
 
 .scroll {
-    background-image: url('../../images/png/Фон.png');
-    background-size: contain;
-    background-repeat: repeat;
     position: fixed;
     top: 0;
     right: 0px;
     width: 10px;
     height: 100vh;
-    z-index: 999;
+    z-index: 98;
 }
 
 .fa-cog {
@@ -87,7 +88,7 @@ button {
     margin-bottom: 50px;
     letter-spacing: 1px;
     text-align: center;
-    span {
+    .border {
         position: absolute;
         bottom: -5px;
         left: 50%;
@@ -105,19 +106,41 @@ button {
     }
 }
 
+.themeBtn {
+    position: fixed; 
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    z-index: 999;
+    background-color: var(--white);
+    box-shadow: 0px 0px 5px 0px var(--basic-text);
+    cursor: pointer;
+    background-image: var(--toggle-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .header {
     width: 100%;
     position: fixed;
     left: 0;
     top: 0;
-    background-color: var(--white);
     z-index: 99;
+    background-color: var(--white);
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     &-nav {
         padding: 25px 0 25px 0;
+        position: relative;
     }
         &-logo {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
             &__link {
                 font-weight: 500;
                 font-size: 40px;
@@ -135,6 +158,22 @@ button {
             height: 50px;
             background-color: var(--basic);
             border-radius: 10px;
+            .themeBtn {
+                position: absolute; 
+                top: 50px;
+                left: 5px;
+                width: 30px;
+                height: 30px;
+                border-radius: 8px;
+                z-index: 999;
+                background-color: var(--white);
+                box-shadow: 0px 0px 5px 0px var(--basic-text);
+                cursor: pointer;
+                background-image: var(--toggle-bg);
+                background-repeat: no-repeat;
+                background-position: center;
+                display: none;
+            }
         }
 
         &-item {
@@ -147,7 +186,7 @@ button {
             width: 100%;
             text-align: center;
             &__link {
-                color: var(--white);
+                color: #fff;
                 font-size: 20px;
                 font-weight: 500;
                 display: flex;
@@ -176,7 +215,7 @@ button {
                 transform: translateY(-35px);
                 position: relative;
                 z-index: 1;
-                color: var(--white);
+                color: #fff;
                 font-size: 25px;
             }
         }
@@ -193,8 +232,7 @@ button {
             left: 0;
             width: 70px;
             height: 65px;
-            background-color: var(--basic-text);
-            // border-radius: 50%;
+            background-color: #0e2541;
             border-bottom-left-radius: 50%;
             border-bottom-right-radius: 50%;
             border: 6px solid var(--white);
@@ -237,20 +275,37 @@ button {
             transform: translateX(70px * 3);
         }
 
-        &-btn {
-            width: 15%;
-            height: 45px;
-            border-radius: 20px;
-            background-color: var(--basic);
-            transition: .3s;
-
-            &__link {
-                color: var(--white);
-                font-size: 14px;
+        .lang {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: auto;
+            height: auto;
+            border-radius: 4px;
+            @include flex-between();
+            padding: 2px 0;
+            text-align: center;
+            cursor: pointer;
+            &-item {
+                @include flex-center;
+                flex-direction: column;
             }
-
-            &:hover {
-                background-color: var(--basic-text);
+            &-icon {
+                width: 40px;
+                height: 24px;
+                border: 1px solid var(--basic);
+                background-image: var(--lang);
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 4px;
+                transition: 1s all;
+            }
+            &__text {
+                font-size: 10px;
+                font-weight: 400;
+                color: var(--basic-text);
+                font-family: 'Poppins', sans-serif;
             }
         }
 }
@@ -270,17 +325,13 @@ button {
 
     &-item {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
     }
 
     &-title {
-        width: 50%;
-        position: absolute;
-        top: 50%;
-        left: -50%;
-        transform: translateY(-50%);
-        transition: .8s;
+        width: 55%;
+        margin-top: 50px;
         &__text {
             font-size: 64px;
             font-weight: 700;
@@ -290,7 +341,7 @@ button {
             position: relative;
             margin-bottom: 10px;
 
-            span {
+            .border {
                 position: absolute;
                 bottom: -5px;
                 left: 50%;
@@ -309,25 +360,16 @@ button {
             font-size: 24px;
             font-weight: 300;
             margin-top: 25px;
+            color: var(--basic-text);
+            line-height: 28px;
         }
-    }
-
-    .addHomeTitle {
-        left: 50px;
     }
 
     &-img {
-        position: absolute;
-        bottom: -500px;
-        right: -500px;
-        transition: .8s;
+        text-align: end;
         &__photo {
             width: 80%;
         }
-    }
-    .addHomeImg {
-        bottom: 0;
-        right: -100px;
     }
 }
 // End home
@@ -340,9 +382,10 @@ button {
         width: 75%;
     }
     &__info-text {
-        font-weight: 300;
+        font-weight: 400;
         font-size: 24px;
         color: var(--basic-text);
+        line-height: 28px;
     }
 }
 // End
@@ -382,12 +425,11 @@ button {
             width: 30%;
             height: 100%;
             text-align: center;
-
             &__title {
                 font-size: 45px;
                 font-weight: 700;
                 color: var(--basic-text);
-                line-height: 55px;
+                line-height: 50px;
             }
         }
         .right-info {
@@ -395,9 +437,10 @@ button {
             height: 100%;
 
             &__text {
-                font-size: 28px;
+                font-size: 22px;
                 font-weight: 500;
                 color: var(--white);
+                line-height: 24px;
             }
         }
     }
@@ -499,18 +542,9 @@ button {
         flex-wrap: wrap;
         position: relative;
         padding: 0 25px;
-        // max-height: 375px;
-        // overflow-y: hidden;
-        // transition: .5s ease;
-        // margin-top: 50px;
-        // transition: .5s;
-
         &::-webkit-scrollbar {
             display: none;
         }
-        // &::-webkit-scrollbar-thumb {
-        //     background-color: var(--basic);
-        // }
     }
 
     .openAllPortfolio {
@@ -703,7 +737,7 @@ button {
     margin-top: 50px;
     padding: 50px 0;
 
-    .title__text span {
+    .title__text .border {
         background-color: var(--white);
     }
 
@@ -720,7 +754,6 @@ button {
     &-info {
         width: 47.5%;
         height: 400px;
-        // background-color: rgba(246, 239, 242, 0.8);
         backdrop-filter: blur(20px);
         border-radius: 25px;
     }
@@ -743,7 +776,6 @@ button {
                 position: relative;
                 width: 100%;
                 height: auto;
-                // margin-bottom: 20px;
 
                 .form__label {
                     position: absolute;
@@ -762,7 +794,7 @@ button {
                     position: absolute;
                     top: 10px;
                     left: -25px;
-                    color: var(--basic-text);
+                    color: #0e2541;
                 }
                 small {
                     position: absolute;
@@ -778,8 +810,8 @@ button {
                 width: 100%;
                 height: 40px;
                 border: none;
-                border: 1px solid var(--basic-text);
-                border-bottom: 3px solid var(--basic-text);
+                border: 1px solid #0e2541;
+                border-bottom: 3px solid #0e2541;
                 margin-bottom: 20px;
                 border-radius: 20px;
                 padding: 0 15px;
@@ -788,8 +820,8 @@ button {
                 transition: .5s;
 
                 &:focus {
-                    border: 1px solid var(--basic);
-                    border-bottom: 3px solid var(--basic);
+                    border: 1px solid #11a192;
+                    border-bottom: 3px solid #11a192
 
                 }
 
@@ -800,17 +832,13 @@ button {
                     font-size: 16px;
                     padding: 0 5px;
                 }
-                // &:focus ~ .fas,
-                // &:not(:placeholder-shown) ~ .fas {
-                //     color: var(--basic);
-                // }
 
             }
             textarea {
                 width: 100%;
                 height: 75px;
-                border: 1px solid var(--basic-text);
-                border-bottom: 3px solid var(--basic-text);
+                border: 1px solid #0e2541;
+                border-bottom: 3px solid #0e2541;
                 border-radius: 20px;
                 padding: 5px 15px;
                 outline: none;
@@ -820,8 +848,8 @@ button {
                 transition: .5s;
                 margin-bottom: 15px;
                 &:focus {
-                    border: 1px solid var(--basic);
-                    border-bottom: 3px solid var(--basic);
+                    border: 1px solid #11a192;
+                    border-bottom: 3px solid #11a192;
                 }
                 &::-webkit-scrollbar {
                     width: 0;
@@ -833,10 +861,6 @@ button {
                     font-size: 16px;
                     padding: 0 5px;
                 }
-                // &:focus ~ .fas,
-                // &:not(:placeholder-shown) ~ .fas {
-                //     color: var(--basic);
-                // }
             }
             
             .circle-sub,
@@ -854,7 +878,7 @@ button {
                     width: 50px;
                     height: 20px;
                     border-radius: 10px;
-                    background-color: var(--white);
+                    background-color: #fff;
                     position: absolute;
                     top: -20px;
                     left: 5px;
@@ -873,10 +897,10 @@ button {
                 left: -25px !important;
             }
             .circle {
-                width: 20px;
+                width: 20px; 
                 height: 20px;
                 border-radius: 50%;
-                background-color: var(--white);
+                background-color: #fff;
                 position: absolute;
                 bottom: 40px;
                 left: -65px;
@@ -889,8 +913,8 @@ button {
                 margin-top: 20px;
                 cursor: pointer;
                 font-size: 18px;
-                background-color: var(--basic-text);
-                color: var(--white);
+                background-color: #0e2541;
+                color: #fff;
                 transition: .3s;
 
                 &:hover {
@@ -905,67 +929,35 @@ button {
 .footer {
     width: 100%;
     height: auto;
-    background-color: var(--basic-text);
+    background-color: #0e2541;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 25px 0;
+    .container {
+        text-align: center;
+    }
 
     &__info {
         text-decoration: none;
-        color: var(--white);
+        color: #fff;
         font-weight: 400px;
         font-size: 20px;
+        font-family: 'Poppins', sans-serif;
 
         i {
             margin-right: 10px;
         }
+        strong {
+            color: #11a192;
+        }
     }
     .hover:hover {
-        color: var(--basic);
+        color: #11a192;
     }
 }
 // End footer
 
-.advertising {
-    width: 100%;
-    height: 100vh;
-    backdrop-filter: blur(5px);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    display: none;
-    align-items: center;
-    justify-content: center;
-
-    &-item {
-        width: 500px;
-        height: 250px;
-        background-color: #ccc;
-        border-radius: 20px;
-        padding: 50px;
-        text-align: center;
-        animation: animAdvertising .5s linear;
-
-        &__title {
-            text-align: center;
-            font-size: 48px;
-            margin-bottom: 50px;
-        }
-        &__info {
-            font-size: 38px;
-        }
-    }
-}
-
-@keyframes animAdvertising {
-    from {
-        transform: scale(0);
-    } to {
-        transform: scale(1);
-    }
-}
 
 /*----------- Main Style ------*/
 .wrapper {
@@ -1012,9 +1004,6 @@ button {
       box-shadow: 0 8rem 2rem var(--basic);
     }
   }
-
-
-
 
   .loader {
     height: 100vh;

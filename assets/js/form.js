@@ -31,35 +31,35 @@ function checkInputs() {
 
 
   if(userNameValue === '' || userNameValue.length <= 2) {
-    setErrorFor(userName, "Введите ваше имя")
+    setErrorFor(userName, "tomato", '3px solid tomato')
   } else {
     setSuccesFor(userName)
     userName.parentElement.children[3].classList.add('success')
   }
 
   if(userEmailValue === '') {
-    setErrorFor(userEmail, "Введите ваш электронной почты")
+    setErrorFor(userEmail, "tomato", '3px solid tomato')
   }
   else if(!isEmail(userEmailValue)) {
-    setErrorFor(userEmail, 'Некорректный эл. почта')
+    setErrorFor(userEmail, "tomato", '3px solid tomato')
   }
   else {
     setSuccesFor(userEmail)
     userEmail.parentElement.children[3].classList.add('success')
   }
 
-  if(userPassValue === '' || userPassValue.length < 4) {
-    setErrorFor(userPass, "Введите ваше парол")
+  if(userPassValue === '' &&  userPassValue.length < 5) {
+    setErrorFor(userPass, "tomato", '3px solid tomato')
   } else {
     setSuccesFor(userPass)
     userPass.parentElement.children[3].classList.add('success')
   }
   
-  if(messageValue === '') {
-    setErrorFor(message, "Оставьте свой отзыв")
+  if(messageValue === '' && messageValue.length < 20) {
+    setErrorFor(message, "tomato", '3px solid tomato')
   }
   else if(messageValue.length < 20) {
-    setErrorFor(message, "введите не менее 20 символов")
+    setErrorFor(message, "tomato", '3px solid tomato')
   }
   else {
     setSuccesFor(message)
@@ -67,26 +67,21 @@ function checkInputs() {
   }
 }
 
-function setErrorFor(input, message) {
-let small = input.parentElement.children[3]
+function setErrorFor(input, iconColor, border) {
+let icon = input.parentElement.children[2]
 
     input.classList.add('inputError');
-
-    small.innerText = message
+    icon.style.color = iconColor
+    input.style.borderBottom = border
 }
 
 function setSuccesFor(input) {
-  
-let checkIcon = input.parentElement.children[1]
 let errorIcon = input.parentElement.children[2]
-let small = input.parentElement.children[3]
 
-    checkIcon.style.display = 'block'
     errorIcon.style.color = '#11a192'
+    input.style.borderBottom = '3px solid #11a192'
     input.classList.remove('inputError');
     input.classList.add('inputSucces');
-
-    small.innerText = ''
 
 } 
 

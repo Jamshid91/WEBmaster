@@ -1,0 +1,25 @@
+body, .header {
+    background: #222222;
+}
+.header-logo__link {
+    color: #fff
+  }
+.header .indicator {
+    background-color: #11a192;
+}
+.header .indicator {
+    border: 6px solid #222222;
+}
+
+.header .indicator::after, .header .indicator::before {
+    box-shadow: 0px -10px 0 0 #222222;
+}
+.scroll .fa-cog{
+    color: gray;
+}
+.title__text, .home-title__text {
+    color: #fff;
+}
+.home-title__info-text, .cooperate__info-text, .technology-list__info {
+    color: grey;
+}
