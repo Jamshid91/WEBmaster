@@ -9,20 +9,20 @@ let allPortfolioBtn = document.querySelector('.allProjects-btn');
 let allPortfolio = document.querySelector('.portfolio-item');
 let loader = document.querySelector('.loader');
 
-window.onload = function() {
-    setTimeout(() => {
-        loader.style.display = 'none'
-        window.scrollTo(0, 0)
-    }, 1500);
+// window.onload = function() {
+//     setTimeout(() => {
+//         loader.style.display = 'none'
+//         window.scrollTo(0, 0)
+//     }, 1500);
     
-    setTimeout(() => {
-        borderBottomOne.classList.add('borderBottom')
-    }, 2000);
-    setTimeout(() => {
-        borderBottomTwo.classList.add('borderBottom')
-    }, 2500);
+//     setTimeout(() => {
+//         borderBottomOne.classList.add('borderBottom')
+//     }, 2000);
+//     setTimeout(() => {
+//         borderBottomTwo.classList.add('borderBottom')
+//     }, 2500);
 
-}
+// }
 
 
 window.addEventListener('scroll', () => {
