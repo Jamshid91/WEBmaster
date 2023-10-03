@@ -35,6 +35,10 @@ const langArr = {
         'ru': 'В настоящее время очень важно иметь собственный веб-сайт для развития вашего бизнеса.',
         'en': 'Nowadays it is very important to have your own website to grow your business.'
     },
+    'homeBtn': {
+      'ru': 'Заказать прямо сейчас',
+      'en': 'Order now'
+    },
     'cooperateTitle': {
         'ru': 'Сотрудничать со мной',
         'en': 'Cooperate with me'
